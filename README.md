@@ -56,11 +56,12 @@ The flow to start the 'Timer' function in Homey (when humidity is above 60%, and
 Homey generates some nice graphs in the 'Insights' interface:
 ![alt tag](https://github.com/abaretta/Itho-WIFI-remote-Homey/blob/master/Images/Insights%20-%20Homey.png)
 
-To be able to graph the State, I assigned each state with a number:
+To be able to graph the State, I assigned each state with a (more or less arbitrary) number:
 ![alt tag](https://github.com/abaretta/Itho-WIFI-remote-Homey/blob/master/Images/Flow%20-%20Homey%20-%20State%20-%20tracking.png)
 
 OTA updates work with .bin files!
 
 I am not a programmer!! Use at your own RISK!!
 
+Refer to the original source of the NodeMCU Itho version:
 https://www.maredana.nl/itho-mechanical-ventilation-with-esp8266/
