@@ -22,7 +22,7 @@ This won't be a problem with an ESP8266, but for Arduino you either need to use 
 
 For SPI, pins 12-15 ()aka D5-D8) are used, a larger ESP8266 model like (but not only) the ESP-03, ESP-07, ESP-12(D, E) or a NodeMCU board is required.
 
-Added a web interface and simple API to control it from something like https://pimatic.org/
+Added a web interface and simple API to control it from the Homey domotics controller (https://athom.com).
 
 ![alt tag](https://github.com/incmve/Itho-WIFI-remote/blob/master/Images/cntrl panel.JPG)
 
