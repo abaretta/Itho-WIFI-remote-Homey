@@ -1,6 +1,7 @@
-# IthoEcoFanRFT
-Cloned from https://github.com/supersjimmie/IthoEcoFanRFT
+# Itho-WIFI-remote-Homey
+Cloned from Cloned from https://github.com/incmve/Itho-WIFI-remote, which was cloned from https://github.com/supersjimmie/IthoEcoFanRFT.
 
+--
 I used A CC1101 module, might work with others like CC1150.
 ```
 Connections between the CC1101 and the ESP8266:
@@ -25,7 +26,7 @@ Added a web interface and simple API to control it from something like https://p
 
 ![alt tag](https://github.com/incmve/Itho-WIFI-remote/blob/master/Images/cntrl panel.JPG)
 
-Also able to give commands by USB
+Also able to give commands by USB (serial)
 
 ![alt tag](https://github.com/incmve/Itho-WIFI-remote/blob/master/Images/serial.JPG)
 
@@ -38,6 +39,8 @@ http://192.168.x.x/api?action=High
 http://192.168.x.x/api?action=Timer
 http://192.168.x.x/api?action=Learn
 http://192.168.x.x/api?action=reset&value=true
+Added:
+http://192.168.x.x/api?action=State
 ```
 OTA updates work with .bin files!
 
