@@ -31,7 +31,7 @@ Also able to give commands by USB (serial)
 ![alt tag](https://github.com/incmve/Itho-WIFI-remote/blob/master/Images/serial.JPG)
 
 
-API work like this:
+The API works like this:
 ```
 http://192.168.x.x/api?action=Low
 http://192.168.x.x/api?action=Medium
@@ -61,7 +61,7 @@ To be able to graph the State, I assigned each state with a (more or less arbitr
 
 OTA updates work with .bin files!
 
-I am not a programmer!! Use at your own RISK!!
+I am not a developer! Use at your own RISK!!
 
 Refer to the original source of the NodeMCU Itho version:
 https://www.maredana.nl/itho-mechanical-ventilation-with-esp8266/
