@@ -16,7 +16,13 @@
 String ssid    = "<SSID>";
 String password = "<password>";
 String espName    = "Itho";
-String Version = "0.8.1";
+String Version = "homey.v7";
+// change to false for DHCP operation
+boolean FIXEDIP = true;
+// Configure for fixed IP address instead of DHCP.
+IPAddress ip(192, 168, 2, 6); 
+IPAddress gateway(192,168,2,222);
+IPAddress subnet(255,255,255,0);
 
 // Homey settings. Please keep your Homey bearer token safe as it gives remote access to all Homey features. Use with care.
 // The risk for this app is limited by using it only on the local LAN. However be sure not to share any files with the bearer token in it such as this Arduino sketch.
@@ -181,12 +187,21 @@ void setup(void)
 
   WiFi.begin(ssid.c_str(), password.c_str());
   int i = 0;
+  // disable AP
+  WiFi.mode(WIFI_STA);
   while (WiFi.status() != WL_CONNECTED && i < 31)
   {
     delay(1000);
     Serial.print(".");
     ++i;
   }
+  
+  // configure fixed IP instead of using DHCP
+  if (FIXEDIP)
+  {
+  WiFi.config(ip, gateway, subnet);
+  }
+  
   if (WiFi.status() != WL_CONNECTED && i >= 30)
   {
     WiFi.disconnect();
