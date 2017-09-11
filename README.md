@@ -1,5 +1,5 @@
 # Itho-WIFI-remote-Homey
-Cloned from Cloned from https://github.com/incmve/Itho-WIFI-remote, which was cloned from https://github.com/supersjimmie/IthoEcoFanRFT. This version just adds integration with the Homey domotics controller.
+Cloned from https://github.com/incmve/Itho-WIFI-remote, which was cloned from https://github.com/supersjimmie/IthoEcoFanRFT. This version just adds integration with the Homey domotics controller.
 
 --
 I used A CC1101 module, might work with others like CC1150.
