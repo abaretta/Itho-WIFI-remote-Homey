@@ -25,7 +25,7 @@ IPAddress gateway(192,168,1,222);
 IPAddress subnet(255,255,255,0);
 
 // Homey settings
-String host   = "192.168.2.17";
+String host   = "192.168.1.17";
 const int httpPort    = 80;
 String varItho = "ithostate";
 String varHumidity = "humidity";
